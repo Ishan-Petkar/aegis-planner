@@ -1,0 +1,14 @@
+# environments and dependencies
+backend/.venv/
+backend/.venv-win/
+frontend/node_modules/
+frontend/dist/
+# runtime
+.run/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# local tooling and private files
+.claude/
+*.pdf
