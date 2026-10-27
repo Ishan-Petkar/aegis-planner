@@ -119,8 +119,8 @@ Six scenarios, three planners, five seeded runs each. Violations are counted by 
 | Constraint violations / plan | 12.23 ± 5.58 | 1.37 ± 1.40 | 0.00 ± 0.00 |
 | Unsafe decisions / plan | 2.77 ± 3.43 | 2.47 ± 2.14 | 1.33 ± 1.89 |
 | Resource utilization (%) | 73.8 ± 12.51 | 79.61 ± 11.01 | 87.2 ± 7.04 |
-| Planning time (ms) | 0.54 ± 0.23 | 1.97 ± 1.04 | 25.39 ± 16.81 |
-| Replanning time (ms) | – | 2.01 ± 1.07 | 29.47 ± 17.32 |
+| Planning time (ms) | 0.78 ± 0.33 | 2.85 ± 1.50 | 36.10 ± 23.80 |
+| Replanning time (ms) | – | 2.92 ± 1.58 | 41.42 ± 24.28 |
 
 Timings depend on the machine. All other values are deterministic. Re-run the experiment with `python backend/experiments/run_ablation.py`, which writes `results.json` and `tables.md`.
 
