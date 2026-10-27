@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-ink-950 text-stone-800 font-sans antialiased; background-image: radial-gradient(1100px 600px at 85% -10%, rgba(217,119,6,.10), transparent), radial-gradient(900px 500px at -10% 0%, rgba(15,118,110,.08), transparent); background-attachment: fixed; }
+h1, h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -.02em; }
+.card { @apply rounded-2xl border border-stone-900/10 bg-ink-800/80 shadow-[0_1px_2px_rgba(68,44,10,.06),0_8px_24px_-12px_rgba(68,44,10,.12)]; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition disabled:opacity-40; }
+.btn-primary { @apply bg-teal-800 text-amber-50 hover:bg-teal-700; }
+.btn-ghost { @apply border border-stone-900/10 bg-ink-800 text-stone-800 hover:bg-ink-700; }
+.label { @apply text-[11px] uppercase tracking-wider text-stone-600; }
+@keyframes pulse-ring { 0% { transform: scale(.6); opacity: .8 } 100% { transform: scale(1.8); opacity: 0 } }
+@keyframes dash { to { stroke-dashoffset: -24 } }
+.flow { stroke-dasharray: 6 6; animation: dash 1s linear infinite; }
+
+html, body { overflow-x: hidden; }
+select, input { @apply outline-none focus-visible:ring-1 focus-visible:ring-teal-700/60; }
+button:focus-visible { @apply outline-none ring-1 ring-teal-700/70; }
+@media (prefers-reduced-motion: reduce) { .flow { animation: none !important; } }

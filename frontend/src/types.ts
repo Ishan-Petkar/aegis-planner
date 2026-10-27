@@ -1,0 +1,14 @@
+export type NodeT = { id: string; label: string; type: string; x: number; y: number; severity: number; hazard: boolean }
+export type EdgeT = { a: string; b: string; cost: number; time: number; risk: number; status: 'open' | 'blocked' | 'damaged'; damage_rate: number }
+export type Team = { id: string; name: string; base: string; capacity: number; capabilities: string[] }
+export type Group = { id: string; label: string; location: string; priority: number; size: number; needs: string[]; window: [number, number] }
+export type ScenarioData = { id: string; name: string; description: string; objective: string; nodes: NodeT[]; edges: EdgeT[]; teams: Team[]; groups: Group[]; events: any[] }
+export type Action = { id: string; type: 'route' | 'assign'; group: string; team: string; leg?: string; src?: string; dst?: string; path?: string[]; start: number; end: number; site?: string }
+export type Violation = { type: string; action: string | null; entity: string; detail: string }
+export type Explanation = { title: string; path?: string[]; facts: [string, any][]; alternatives?: { path: string[]; composite: number; delta: number }[]; candidates?: { team: string; eta: number; route_cost: number; chosen: boolean }[]; eliminated?: { team: string; reason: string }[]; risk: { H?: number; D?: number; S?: number; R?: number }; violations: Violation[] }
+export type TraceIt = { iteration: number; stage: string; tasks: any[]; violations: Violation[] }
+export type Step = { label: string; at: number; world: { nodes: NodeT[]; edges: EdgeT[] }; event: any; impact: Violation[]; replan_ms: number | null; ms: number; plan: { actions: Action[]; dispatch_issues: Violation[] }; violations: Violation[]; risks: Record<string, any>; trace: TraceIt[]; explanations: Record<string, Explanation> }
+export type Metrics = { success: boolean; violations: number; unsafe: number; route_cost: number; travel_cost: number; planning_ms: number; replanning_ms: number | null; utilization: number; repair_iterations: number }
+export type Run = { run_id: string; scenario: ScenarioData; condition: string; condition_name: string; steps: Step[]; metrics: Metrics }
+export const CONDITIONS: Record<string, string> = { baseline: 'Baseline Planner', solvers: 'AEGIS + Solvers', full: 'Full AEGIS' }
+export const TEAM_COLORS = ['#0f766e', '#4f46e5', '#be185d', '#4d7c0f']
