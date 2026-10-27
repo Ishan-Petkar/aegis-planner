@@ -1,0 +1,629 @@
+{
+ "id": "S4",
+ "name": "Sinhagad Hill Wildfire",
+ "description": "17 locations, 3 rescue teams, 11 groups, 2 mid-run events.",
+ "objective": "Evacuate all civilian groups to the nearest hospital or safe zone",
+ "nodes": [
+  {
+   "id": "v1",
+   "label": "Warje",
+   "type": "intersection",
+   "x": 12.0,
+   "y": 70.9,
+   "severity": 0.15,
+   "hazard": false
+  },
+  {
+   "id": "v2",
+   "label": "Kothrud",
+   "type": "intersection",
+   "x": 8.3,
+   "y": 39.9,
+   "severity": 0.08,
+   "hazard": false
+  },
+  {
+   "id": "v3",
+   "label": "Yerwada",
+   "type": "residential",
+   "x": 26.4,
+   "y": 88.4,
+   "severity": 0.39,
+   "hazard": false
+  },
+  {
+   "id": "v4",
+   "label": "Aundh",
+   "type": "residential",
+   "x": 47.1,
+   "y": 81.3,
+   "severity": 0.37,
+   "hazard": false
+  },
+  {
+   "id": "v5",
+   "label": "Katraj",
+   "type": "residential",
+   "x": 88.5,
+   "y": 59.1,
+   "severity": 0.31,
+   "hazard": false
+  },
+  {
+   "id": "v6",
+   "label": "Hadapsar",
+   "type": "residential",
+   "x": 20.9,
+   "y": 31.0,
+   "severity": 0.3,
+   "hazard": false
+  },
+  {
+   "id": "v7",
+   "label": "Shivajinagar Shelter",
+   "type": "shelter",
+   "x": 24.6,
+   "y": 14.9,
+   "severity": 0.15,
+   "hazard": false
+  },
+  {
+   "id": "v8",
+   "label": "Kharadi",
+   "type": "intersection",
+   "x": 62.7,
+   "y": 37.6,
+   "severity": 0.13,
+   "hazard": false
+  },
+  {
+   "id": "v9",
+   "label": "Swargate Hospital",
+   "type": "hospital",
+   "x": 83.8,
+   "y": 30.7,
+   "severity": 0.07,
+   "hazard": false
+  },
+  {
+   "id": "v10",
+   "label": "Baner",
+   "type": "residential",
+   "x": 65.0,
+   "y": 64.5,
+   "severity": 0.31,
+   "hazard": false
+  },
+  {
+   "id": "v11",
+   "label": "Hinjewadi",
+   "type": "residential",
+   "x": 48.3,
+   "y": 48.3,
+   "severity": 0.38,
+   "hazard": false
+  },
+  {
+   "id": "v12",
+   "label": "Magarpatta",
+   "type": "residential",
+   "x": 51.0,
+   "y": 24.7,
+   "severity": 0.3,
+   "hazard": false
+  },
+  {
+   "id": "v13",
+   "label": "Sinhagad Road Hazard Zone",
+   "type": "hazard",
+   "x": 94.0,
+   "y": 83.4,
+   "severity": 0.9,
+   "hazard": false
+  },
+  {
+   "id": "v14",
+   "label": "Wakad",
+   "type": "residential",
+   "x": 69.9,
+   "y": 10.2,
+   "severity": 0.35,
+   "hazard": false
+  },
+  {
+   "id": "v15",
+   "label": "Deccan",
+   "type": "residential",
+   "x": 25.5,
+   "y": 60.0,
+   "severity": 0.25,
+   "hazard": false
+  },
+  {
+   "id": "v16",
+   "label": "Bibwewadi",
+   "type": "residential",
+   "x": 8.0,
+   "y": 21.6,
+   "severity": 0.38,
+   "hazard": false
+  },
+  {
+   "id": "v17",
+   "label": "Kondhwa",
+   "type": "residential",
+   "x": 66.5,
+   "y": 87.9,
+   "severity": 0.38,
+   "hazard": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "v1",
+   "b": "v15",
+   "cost": 8.7,
+   "time": 8.0,
+   "risk": 0.16,
+   "status": "open",
+   "damage_rate": 0.01
+  },
+  {
+   "a": "v1",
+   "b": "v3",
+   "cost": 11.3,
+   "time": 10.1,
+   "risk": 0.07,
+   "status": "open",
+   "damage_rate": 0.11
+  },
+  {
+   "a": "v1",
+   "b": "v2",
+   "cost": 15.6,
+   "time": 11.1,
+   "risk": 0.04,
+   "status": "open",
+   "damage_rate": 0.09
+  },
+  {
+   "a": "v2",
+   "b": "v6",
+   "cost": 7.7,
+   "time": 6.7,
+   "risk": 0.1,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v16",
+   "b": "v2",
+   "cost": 9.2,
+   "time": 8.5,
+   "risk": 0.16,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v15",
+   "b": "v2",
+   "cost": 13.2,
+   "time": 10.9,
+   "risk": 0.09,
+   "status": "open",
+   "damage_rate": 0.04
+  },
+  {
+   "a": "v3",
+   "b": "v4",
+   "cost": 10.9,
+   "time": 9.5,
+   "risk": 0.14,
+   "status": "open",
+   "damage_rate": 0.02
+  },
+  {
+   "a": "v15",
+   "b": "v3",
+   "cost": 14.2,
+   "time": 12.0,
+   "risk": 0.04,
+   "status": "open",
+   "damage_rate": 0.15
+  },
+  {
+   "a": "v17",
+   "b": "v4",
+   "cost": 10.2,
+   "time": 9.2,
+   "risk": 0.16,
+   "status": "open",
+   "damage_rate": 0.06
+  },
+  {
+   "a": "v10",
+   "b": "v4",
+   "cost": 12.3,
+   "time": 9.4,
+   "risk": 0.11,
+   "status": "open",
+   "damage_rate": 0.11
+  },
+  {
+   "a": "v10",
+   "b": "v5",
+   "cost": 12.1,
+   "time": 9.5,
+   "risk": 0.16,
+   "status": "blocked",
+   "damage_rate": 0.18
+  },
+  {
+   "a": "v13",
+   "b": "v5",
+   "cost": 12.5,
+   "time": 10.6,
+   "risk": 0.21,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v5",
+   "b": "v9",
+   "cost": 14.4,
+   "time": 12.1,
+   "risk": 0.11,
+   "status": "open",
+   "damage_rate": 0.24
+  },
+  {
+   "a": "v16",
+   "b": "v6",
+   "cost": 8.0,
+   "time": 6.2,
+   "risk": 0.12,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v6",
+   "b": "v7",
+   "cost": 8.3,
+   "time": 6.5,
+   "risk": 0.04,
+   "status": "damaged",
+   "damage_rate": 0.65
+  },
+  {
+   "a": "v16",
+   "b": "v7",
+   "cost": 9.0,
+   "time": 7.5,
+   "risk": 0.15,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v12",
+   "b": "v7",
+   "cost": 14.1,
+   "time": 10.4,
+   "risk": 0.07,
+   "status": "open",
+   "damage_rate": 0.16
+  },
+  {
+   "a": "v12",
+   "b": "v8",
+   "cost": 8.7,
+   "time": 7.2,
+   "risk": 0.09,
+   "status": "open",
+   "damage_rate": 0.11
+  },
+  {
+   "a": "v11",
+   "b": "v8",
+   "cost": 9.0,
+   "time": 8.6,
+   "risk": 0.18,
+   "status": "open",
+   "damage_rate": 0.19
+  },
+  {
+   "a": "v8",
+   "b": "v9",
+   "cost": 11.1,
+   "time": 10.1,
+   "risk": 0.13,
+   "status": "open",
+   "damage_rate": 0.17
+  },
+  {
+   "a": "v14",
+   "b": "v9",
+   "cost": 12.4,
+   "time": 10.0,
+   "risk": 0.13,
+   "status": "open",
+   "damage_rate": 0.14
+  },
+  {
+   "a": "v10",
+   "b": "v11",
+   "cost": 11.6,
+   "time": 9.9,
+   "risk": 0.13,
+   "status": "open",
+   "damage_rate": 0.1
+  },
+  {
+   "a": "v10",
+   "b": "v17",
+   "cost": 11.7,
+   "time": 9.4,
+   "risk": 0.06,
+   "status": "open",
+   "damage_rate": 0.0
+  },
+  {
+   "a": "v11",
+   "b": "v12",
+   "cost": 11.9,
+   "time": 10.5,
+   "risk": 0.15,
+   "status": "open",
+   "damage_rate": 0.07
+  },
+  {
+   "a": "v12",
+   "b": "v14",
+   "cost": 11.9,
+   "time": 9.8,
+   "risk": 0.2,
+   "status": "open",
+   "damage_rate": 0.08
+  },
+  {
+   "a": "v13",
+   "b": "v17",
+   "cost": 13.9,
+   "time": 10.3,
+   "risk": 0.16,
+   "status": "open",
+   "damage_rate": 0.04
+  },
+  {
+   "a": "v10",
+   "b": "v13",
+   "cost": 17.3,
+   "time": 12.8,
+   "risk": 0.12,
+   "status": "open",
+   "damage_rate": 0.05
+  },
+  {
+   "a": "v14",
+   "b": "v8",
+   "cost": 14.2,
+   "time": 11.1,
+   "risk": 0.07,
+   "status": "open",
+   "damage_rate": 0.01
+  },
+  {
+   "a": "v11",
+   "b": "v15",
+   "cost": 12.8,
+   "time": 9.9,
+   "risk": 0.21,
+   "status": "open",
+   "damage_rate": 0.2
+  }
+ ],
+ "teams": [
+  {
+   "id": "T1",
+   "name": "Alpha Team",
+   "base": "v2",
+   "capacity": 5,
+   "capabilities": [
+    "logistics",
+    "rescue"
+   ]
+  },
+  {
+   "id": "T2",
+   "name": "Bravo Team",
+   "base": "v7",
+   "capacity": 3,
+   "capabilities": [
+    "rescue",
+    "fire"
+   ]
+  },
+  {
+   "id": "T3",
+   "name": "Charlie Team",
+   "base": "v8",
+   "capacity": 4,
+   "capabilities": [
+    "rescue",
+    "fire"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "G1",
+   "label": "Group 1 (Hadapsar)",
+   "location": "v6",
+   "priority": 5,
+   "size": 15,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    235,
+    266
+   ]
+  },
+  {
+   "id": "G2",
+   "label": "Group 2 (Magarpatta)",
+   "location": "v12",
+   "priority": 2,
+   "size": 57,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    160,
+    191
+   ]
+  },
+  {
+   "id": "G3",
+   "label": "Group 3 (Hinjewadi)",
+   "location": "v11",
+   "priority": 4,
+   "size": 13,
+   "needs": [
+    "rescue"
+   ],
+   "window": [
+    144,
+    182
+   ]
+  },
+  {
+   "id": "G4",
+   "label": "Group 4 (Kondhwa)",
+   "location": "v17",
+   "priority": 3,
+   "size": 44,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    148,
+    181
+   ]
+  },
+  {
+   "id": "G5",
+   "label": "Group 5 (Katraj)",
+   "location": "v5",
+   "priority": 4,
+   "size": 14,
+   "needs": [
+    "logistics"
+   ],
+   "window": [
+    184,
+    216
+   ]
+  },
+  {
+   "id": "G6",
+   "label": "Group 6 (Wakad)",
+   "location": "v14",
+   "priority": 3,
+   "size": 50,
+   "needs": [
+    "rescue"
+   ],
+   "window": [
+    202,
+    246
+   ]
+  },
+  {
+   "id": "G7",
+   "label": "Group 7 (Deccan)",
+   "location": "v15",
+   "priority": 5,
+   "size": 45,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    125,
+    158
+   ]
+  },
+  {
+   "id": "G8",
+   "label": "Group 8 (Baner)",
+   "location": "v10",
+   "priority": 1,
+   "size": 38,
+   "needs": [
+    "logistics"
+   ],
+   "window": [
+    259,
+    292
+   ]
+  },
+  {
+   "id": "G9",
+   "label": "Group 9 (Aundh)",
+   "location": "v4",
+   "priority": 3,
+   "size": 53,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    185,
+    226
+   ]
+  },
+  {
+   "id": "G10",
+   "label": "Group 10 (Bibwewadi)",
+   "location": "v16",
+   "priority": 2,
+   "size": 57,
+   "needs": [
+    "rescue"
+   ],
+   "window": [
+    223,
+    256
+   ]
+  },
+  {
+   "id": "G11",
+   "label": "Group 11 (Yerwada)",
+   "location": "v3",
+   "priority": 5,
+   "size": 25,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    259,
+    301
+   ]
+  }
+ ],
+ "events": [
+  {
+   "at": 60,
+   "kind": "block",
+   "edge": [
+    "v16",
+    "v7"
+   ],
+   "label": "Bridge collapse"
+  },
+  {
+   "at": 120,
+   "kind": "hazard",
+   "node": "v8",
+   "label": "Gas leak ignites"
+  }
+ ]
+}

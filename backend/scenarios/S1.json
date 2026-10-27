@@ -1,0 +1,392 @@
+{
+ "id": "S1",
+ "name": "Mutha River Flood",
+ "description": "11 locations, 2 rescue teams, 5 groups, 2 mid-run events.",
+ "objective": "Evacuate all civilian groups to the nearest hospital or safe zone",
+ "nodes": [
+  {
+   "id": "v1",
+   "label": "Bibwewadi",
+   "type": "intersection",
+   "x": 26.3,
+   "y": 28.2,
+   "severity": 0.08,
+   "hazard": false
+  },
+  {
+   "id": "v2",
+   "label": "Swargate Hazard Zone",
+   "type": "hazard",
+   "x": 80.1,
+   "y": 17.4,
+   "severity": 0.9,
+   "hazard": false
+  },
+  {
+   "id": "v3",
+   "label": "Hadapsar",
+   "type": "intersection",
+   "x": 44.1,
+   "y": 16.7,
+   "severity": 0.18,
+   "hazard": false
+  },
+  {
+   "id": "v4",
+   "label": "Viman Nagar",
+   "type": "residential",
+   "x": 43.4,
+   "y": 85.8,
+   "severity": 0.35,
+   "hazard": false
+  },
+  {
+   "id": "v5",
+   "label": "Baner",
+   "type": "residential",
+   "x": 23.6,
+   "y": 59.7,
+   "severity": 0.44,
+   "hazard": false
+  },
+  {
+   "id": "v6",
+   "label": "Wakad",
+   "type": "intersection",
+   "x": 7.8,
+   "y": 16.3,
+   "severity": 0.05,
+   "hazard": false
+  },
+  {
+   "id": "v7",
+   "label": "Deccan",
+   "type": "residential",
+   "x": 69.8,
+   "y": 74.4,
+   "severity": 0.41,
+   "hazard": false
+  },
+  {
+   "id": "v8",
+   "label": "Kharadi Hospital",
+   "type": "hospital",
+   "x": 67.2,
+   "y": 45.3,
+   "severity": 0.14,
+   "hazard": false
+  },
+  {
+   "id": "v9",
+   "label": "Warje",
+   "type": "residential",
+   "x": 90.0,
+   "y": 85.7,
+   "severity": 0.29,
+   "hazard": false
+  },
+  {
+   "id": "v10",
+   "label": "Pimpri",
+   "type": "intersection",
+   "x": 84.9,
+   "y": 66.6,
+   "severity": 0.08,
+   "hazard": false
+  },
+  {
+   "id": "v11",
+   "label": "Hinjewadi",
+   "type": "residential",
+   "x": 9.1,
+   "y": 91.0,
+   "severity": 0.33,
+   "hazard": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "v1",
+   "b": "v3",
+   "cost": 10.6,
+   "time": 9.2,
+   "risk": 0.21,
+   "status": "open",
+   "damage_rate": 0.22
+  },
+  {
+   "a": "v1",
+   "b": "v6",
+   "cost": 11.0,
+   "time": 9.4,
+   "risk": 0.1,
+   "status": "open",
+   "damage_rate": 0.1
+  },
+  {
+   "a": "v1",
+   "b": "v5",
+   "cost": 15.8,
+   "time": 12.0,
+   "risk": 0.08,
+   "status": "open",
+   "damage_rate": 0.07
+  },
+  {
+   "a": "v2",
+   "b": "v8",
+   "cost": 15.4,
+   "time": 12.4,
+   "risk": 0.17,
+   "status": "open",
+   "damage_rate": 0.06
+  },
+  {
+   "a": "v2",
+   "b": "v3",
+   "cost": 18.0,
+   "time": 14.2,
+   "risk": 0.08,
+   "status": "open",
+   "damage_rate": 0.23
+  },
+  {
+   "a": "v10",
+   "b": "v2",
+   "cost": 24.7,
+   "time": 17.6,
+   "risk": 0.14,
+   "status": "open",
+   "damage_rate": 0.2
+  },
+  {
+   "a": "v3",
+   "b": "v6",
+   "cost": 18.2,
+   "time": 13.3,
+   "risk": 0.13,
+   "status": "open",
+   "damage_rate": 0.03
+  },
+  {
+   "a": "v4",
+   "b": "v7",
+   "cost": 14.4,
+   "time": 11.8,
+   "risk": 0.21,
+   "status": "open",
+   "damage_rate": 0.09
+  },
+  {
+   "a": "v4",
+   "b": "v5",
+   "cost": 16.4,
+   "time": 13.0,
+   "risk": 0.2,
+   "status": "damaged",
+   "damage_rate": 0.65
+  },
+  {
+   "a": "v11",
+   "b": "v4",
+   "cost": 17.3,
+   "time": 12.8,
+   "risk": 0.17,
+   "status": "open",
+   "damage_rate": 0.03
+  },
+  {
+   "a": "v11",
+   "b": "v5",
+   "cost": 17.2,
+   "time": 13.6,
+   "risk": 0.06,
+   "status": "open",
+   "damage_rate": 0.07
+  },
+  {
+   "a": "v5",
+   "b": "v6",
+   "cost": 23.1,
+   "time": 16.8,
+   "risk": 0.15,
+   "status": "open",
+   "damage_rate": 0.03
+  },
+  {
+   "a": "v10",
+   "b": "v7",
+   "cost": 8.5,
+   "time": 6.7,
+   "risk": 0.05,
+   "status": "open",
+   "damage_rate": 0.08
+  },
+  {
+   "a": "v7",
+   "b": "v9",
+   "cost": 11.6,
+   "time": 8.4,
+   "risk": 0.08,
+   "status": "open",
+   "damage_rate": 0.17
+  },
+  {
+   "a": "v10",
+   "b": "v8",
+   "cost": 13.8,
+   "time": 11.2,
+   "risk": 0.08,
+   "status": "open",
+   "damage_rate": 0.0
+  },
+  {
+   "a": "v7",
+   "b": "v8",
+   "cost": 14.6,
+   "time": 11.3,
+   "risk": 0.07,
+   "status": "open",
+   "damage_rate": 0.13
+  },
+  {
+   "a": "v10",
+   "b": "v9",
+   "cost": 9.9,
+   "time": 8.1,
+   "risk": 0.12,
+   "status": "open",
+   "damage_rate": 0.15
+  },
+  {
+   "a": "v8",
+   "b": "v9",
+   "cost": 23.2,
+   "time": 16.9,
+   "risk": 0.15,
+   "status": "open",
+   "damage_rate": 0.23
+  },
+  {
+   "a": "v11",
+   "b": "v7",
+   "cost": 31.5,
+   "time": 23.1,
+   "risk": 0.12,
+   "status": "blocked",
+   "damage_rate": 0.12
+  }
+ ],
+ "teams": [
+  {
+   "id": "T1",
+   "name": "Alpha Team",
+   "base": "v10",
+   "capacity": 2,
+   "capabilities": [
+    "fire",
+    "logistics",
+    "rescue"
+   ]
+  },
+  {
+   "id": "T2",
+   "name": "Bravo Team",
+   "base": "v3",
+   "capacity": 4,
+   "capabilities": [
+    "fire",
+    "rescue"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "G1",
+   "label": "Group 1 (Warje)",
+   "location": "v9",
+   "priority": 4,
+   "size": 52,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    242,
+    285
+   ]
+  },
+  {
+   "id": "G2",
+   "label": "Group 2 (Hinjewadi)",
+   "location": "v11",
+   "priority": 4,
+   "size": 10,
+   "needs": [
+    "rescue"
+   ],
+   "window": [
+    203,
+    233
+   ]
+  },
+  {
+   "id": "G3",
+   "label": "Group 3 (Baner)",
+   "location": "v5",
+   "priority": 4,
+   "size": 29,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    164,
+    205
+   ]
+  },
+  {
+   "id": "G4",
+   "label": "Group 4 (Deccan)",
+   "location": "v7",
+   "priority": 4,
+   "size": 50,
+   "needs": [
+    "rescue"
+   ],
+   "window": [
+    257,
+    286
+   ]
+  },
+  {
+   "id": "G5",
+   "label": "Group 5 (Viman Nagar)",
+   "location": "v4",
+   "priority": 4,
+   "size": 56,
+   "needs": [
+    "fire"
+   ],
+   "window": [
+    155,
+    198
+   ]
+  }
+ ],
+ "events": [
+  {
+   "at": 60,
+   "kind": "block",
+   "edge": [
+    "v11",
+    "v4"
+   ],
+   "label": "Bridge collapse"
+  },
+  {
+   "at": 120,
+   "kind": "hazard",
+   "node": "v6",
+   "label": "Gas leak ignites"
+  }
+ ]
+}

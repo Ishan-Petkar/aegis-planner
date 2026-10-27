@@ -1,0 +1,743 @@
+{
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "scenarios": [
+  {
+   "id": "S1",
+   "name": "Mutha River Flood"
+  },
+  {
+   "id": "S2",
+   "name": "Pimpri Chemical Spill"
+  },
+  {
+   "id": "S3",
+   "name": "Katraj Earthquake"
+  },
+  {
+   "id": "S4",
+   "name": "Sinhagad Hill Wildfire"
+  },
+  {
+   "id": "S5",
+   "name": "Khadakwasla Dam Breach"
+  },
+  {
+   "id": "S6",
+   "name": "Pune Metro Multi-Hazard"
+  }
+ ],
+ "conditions": {
+  "baseline": "Baseline Planner",
+  "solvers": "AEGIS + Solvers",
+  "full": "Full AEGIS"
+ },
+ "overall": {
+  "baseline": {
+   "success": {
+    "mean": 0.0,
+    "std": 0.0
+   },
+   "violations": {
+    "mean": 12.23,
+    "std": 5.58
+   },
+   "route_cost": {
+    "mean": 822.93,
+    "std": 289.56
+   },
+   "travel_cost": {
+    "mean": 732.58,
+    "std": 252.31
+   },
+   "planning_ms": {
+    "mean": 0.78,
+    "std": 0.33
+   },
+   "replanning_ms": null,
+   "unsafe": {
+    "mean": 2.77,
+    "std": 3.43
+   },
+   "utilization": {
+    "mean": 73.8,
+    "std": 12.51
+   }
+  },
+  "solvers": {
+   "success": {
+    "mean": 23.0,
+    "std": 42.0
+   },
+   "violations": {
+    "mean": 1.37,
+    "std": 1.4
+   },
+   "route_cost": {
+    "mean": 928.87,
+    "std": 319.5
+   },
+   "travel_cost": {
+    "mean": 824.84,
+    "std": 275.66
+   },
+   "planning_ms": {
+    "mean": 2.85,
+    "std": 1.5
+   },
+   "replanning_ms": {
+    "mean": 2.92,
+    "std": 1.58
+   },
+   "unsafe": {
+    "mean": 2.47,
+    "std": 2.14
+   },
+   "utilization": {
+    "mean": 79.61,
+    "std": 11.01
+   }
+  },
+  "full": {
+   "success": {
+    "mean": 100.0,
+    "std": 0.0
+   },
+   "violations": {
+    "mean": 0.0,
+    "std": 0.0
+   },
+   "route_cost": {
+    "mean": 1062.04,
+    "std": 334.35
+   },
+   "travel_cost": {
+    "mean": 948.02,
+    "std": 291.6
+   },
+   "planning_ms": {
+    "mean": 36.1,
+    "std": 23.8
+   },
+   "replanning_ms": {
+    "mean": 41.42,
+    "std": 24.28
+   },
+   "unsafe": {
+    "mean": 1.33,
+    "std": 1.89
+   },
+   "utilization": {
+    "mean": 87.2,
+    "std": 7.04
+   }
+  }
+ },
+ "by_scenario": {
+  "baseline": {
+   "S1": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 4.6,
+     "std": 0.49
+    },
+    "route_cost": {
+     "mean": 413.04,
+     "std": 10.22
+    },
+    "travel_cost": {
+     "mean": 376.32,
+     "std": 10.01
+    },
+    "planning_ms": {
+     "mean": 0.36,
+     "std": 0.08
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 50.0,
+     "std": 0.0
+    }
+   },
+   "S2": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 7.0,
+     "std": 1.67
+    },
+    "route_cost": {
+     "mean": 531.44,
+     "std": 49.12
+    },
+    "travel_cost": {
+     "mean": 476.82,
+     "std": 45.26
+    },
+    "planning_ms": {
+     "mean": 0.51,
+     "std": 0.06
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 0.4,
+     "std": 0.49
+    },
+    "utilization": {
+     "mean": 80.0,
+     "std": 6.12
+    }
+   },
+   "S3": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 10.4,
+     "std": 2.15
+    },
+    "route_cost": {
+     "mean": 851.23,
+     "std": 179.48
+    },
+    "travel_cost": {
+     "mean": 746.81,
+     "std": 154.36
+    },
+    "planning_ms": {
+     "mean": 0.67,
+     "std": 0.06
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 81.8,
+     "std": 0.0
+    }
+   },
+   "S4": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 18.0,
+     "std": 2.0
+    },
+    "route_cost": {
+     "mean": 891.31,
+     "std": 39.16
+    },
+    "travel_cost": {
+     "mean": 802.54,
+     "std": 33.16
+    },
+    "planning_ms": {
+     "mean": 0.8,
+     "std": 0.03
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 9.0,
+     "std": 1.41
+    },
+    "utilization": {
+     "mean": 71.66,
+     "std": 8.5
+    }
+   },
+   "S5": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 15.2,
+     "std": 2.04
+    },
+    "route_cost": {
+     "mean": 1024.6,
+     "std": 23.54
+    },
+    "travel_cost": {
+     "mean": 910.27,
+     "std": 13.06
+    },
+    "planning_ms": {
+     "mean": 1.14,
+     "std": 0.23
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 5.4,
+     "std": 0.8
+    },
+    "utilization": {
+     "mean": 84.6,
+     "std": 4.87
+    }
+   },
+   "S6": {
+    "success": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 18.2,
+     "std": 2.04
+    },
+    "route_cost": {
+     "mean": 1226.0,
+     "std": 68.4
+    },
+    "travel_cost": {
+     "mean": 1082.72,
+     "std": 55.84
+    },
+    "planning_ms": {
+     "mean": 1.2,
+     "std": 0.04
+    },
+    "replanning_ms": null,
+    "unsafe": {
+     "mean": 1.8,
+     "std": 0.4
+    },
+    "utilization": {
+     "mean": 74.72,
+     "std": 3.92
+    }
+   }
+  },
+  "solvers": {
+   "S1": {
+    "success": {
+     "mean": 0.2,
+     "std": 0.4
+    },
+    "violations": {
+     "mean": 0.8,
+     "std": 0.4
+    },
+    "route_cost": {
+     "mean": 531.07,
+     "std": 95.51
+    },
+    "travel_cost": {
+     "mean": 482.53,
+     "std": 86.59
+    },
+    "planning_ms": {
+     "mean": 0.98,
+     "std": 0.04
+    },
+    "replanning_ms": {
+     "mean": 0.96,
+     "std": 0.1
+    },
+    "unsafe": {
+     "mean": 0.8,
+     "std": 0.4
+    },
+    "utilization": {
+     "mean": 76.66,
+     "std": 8.13
+    }
+   },
+   "S2": {
+    "success": {
+     "mean": 0.4,
+     "std": 0.49
+    },
+    "violations": {
+     "mean": 0.6,
+     "std": 0.49
+    },
+    "route_cost": {
+     "mean": 666.49,
+     "std": 45.05
+    },
+    "travel_cost": {
+     "mean": 597.55,
+     "std": 40.49
+    },
+    "planning_ms": {
+     "mean": 1.63,
+     "std": 0.25
+    },
+    "replanning_ms": {
+     "mean": 1.66,
+     "std": 0.13
+    },
+    "unsafe": {
+     "mean": 2.8,
+     "std": 0.4
+    },
+    "utilization": {
+     "mean": 82.5,
+     "std": 6.12
+    }
+   },
+   "S3": {
+    "success": {
+     "mean": 0.2,
+     "std": 0.4
+    },
+    "violations": {
+     "mean": 1.2,
+     "std": 0.75
+    },
+    "route_cost": {
+     "mean": 853.37,
+     "std": 131.74
+    },
+    "travel_cost": {
+     "mean": 748.39,
+     "std": 114.66
+    },
+    "planning_ms": {
+     "mean": 2.44,
+     "std": 0.2
+    },
+    "replanning_ms": {
+     "mean": 2.45,
+     "std": 0.15
+    },
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 74.52,
+     "std": 6.81
+    }
+   },
+   "S4": {
+    "success": {
+     "mean": 0.2,
+     "std": 0.4
+    },
+    "violations": {
+     "mean": 1.8,
+     "std": 1.72
+    },
+    "route_cost": {
+     "mean": 958.5,
+     "std": 155.29
+    },
+    "travel_cost": {
+     "mean": 865.93,
+     "std": 137.65
+    },
+    "planning_ms": {
+     "mean": 2.88,
+     "std": 0.09
+    },
+    "replanning_ms": {
+     "mean": 2.9,
+     "std": 0.37
+    },
+    "unsafe": {
+     "mean": 5.2,
+     "std": 0.98
+    },
+    "utilization": {
+     "mean": 81.66,
+     "std": 12.27
+    }
+   },
+   "S5": {
+    "success": {
+     "mean": 0.2,
+     "std": 0.4
+    },
+    "violations": {
+     "mean": 1.8,
+     "std": 1.72
+    },
+    "route_cost": {
+     "mean": 1136.92,
+     "std": 139.9
+    },
+    "travel_cost": {
+     "mean": 1010.02,
+     "std": 127.47
+    },
+    "planning_ms": {
+     "mean": 3.56,
+     "std": 0.22
+    },
+    "replanning_ms": {
+     "mean": 3.82,
+     "std": 0.41
+    },
+    "unsafe": {
+     "mean": 5.0,
+     "std": 1.1
+    },
+    "utilization": {
+     "mean": 90.76,
+     "std": 11.32
+    }
+   },
+   "S6": {
+    "success": {
+     "mean": 0.2,
+     "std": 0.4
+    },
+    "violations": {
+     "mean": 2.0,
+     "std": 1.79
+    },
+    "route_cost": {
+     "mean": 1426.9,
+     "std": 123.65
+    },
+    "travel_cost": {
+     "mean": 1244.59,
+     "std": 107.62
+    },
+    "planning_ms": {
+     "mean": 5.62,
+     "std": 0.22
+    },
+    "replanning_ms": {
+     "mean": 5.71,
+     "std": 0.63
+    },
+    "unsafe": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 71.56,
+     "std": 7.86
+    }
+   }
+  },
+  "full": {
+   "S1": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 644.25,
+     "std": 0.0
+    },
+    "travel_cost": {
+     "mean": 582.15,
+     "std": 0.0
+    },
+    "planning_ms": {
+     "mean": 12.92,
+     "std": 1.52
+    },
+    "replanning_ms": {
+     "mean": 13.84,
+     "std": 1.24
+    },
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 83.3,
+     "std": 0.0
+    }
+   },
+   "S2": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 727.5,
+     "std": 0.0
+    },
+    "travel_cost": {
+     "mean": 655.87,
+     "std": 0.0
+    },
+    "planning_ms": {
+     "mean": 21.51,
+     "std": 0.83
+    },
+    "replanning_ms": {
+     "mean": 17.8,
+     "std": 1.87
+    },
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 87.5,
+     "std": 0.0
+    }
+   },
+   "S3": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 1029.16,
+     "std": 14.2
+    },
+    "travel_cost": {
+     "mean": 906.83,
+     "std": 12.1
+    },
+    "planning_ms": {
+     "mean": 30.66,
+     "std": 5.01
+    },
+    "replanning_ms": {
+     "mean": 27.16,
+     "std": 4.24
+    },
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 81.8,
+     "std": 0.0
+    }
+   },
+   "S4": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 1079.42,
+     "std": 0.0
+    },
+    "travel_cost": {
+     "mean": 976.82,
+     "std": 0.0
+    },
+    "planning_ms": {
+     "mean": 31.69,
+     "std": 4.96
+    },
+    "replanning_ms": {
+     "mean": 49.81,
+     "std": 2.13
+    },
+    "unsafe": {
+     "mean": 4.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 91.7,
+     "std": 0.0
+    }
+   },
+   "S5": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 1236.28,
+     "std": 0.0
+    },
+    "travel_cost": {
+     "mean": 1104.95,
+     "std": 0.0
+    },
+    "planning_ms": {
+     "mean": 40.46,
+     "std": 6.41
+    },
+    "replanning_ms": {
+     "mean": 60.62,
+     "std": 4.91
+    },
+    "unsafe": {
+     "mean": 4.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 100.0,
+     "std": 0.0
+    }
+   },
+   "S6": {
+    "success": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "violations": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "route_cost": {
+     "mean": 1655.6,
+     "std": 0.0
+    },
+    "travel_cost": {
+     "mean": 1461.5,
+     "std": 0.0
+    },
+    "planning_ms": {
+     "mean": 79.37,
+     "std": 24.8
+    },
+    "replanning_ms": {
+     "mean": 79.28,
+     "std": 9.59
+    },
+    "unsafe": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "utilization": {
+     "mean": 78.9,
+     "std": 0.0
+    }
+   }
+  }
+ }
+}
